@@ -1,6 +1,12 @@
 {
-  "name": "Getting Started Example",
+  "name": "Free Medium",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "manifest_version": 2
+  "description": "Hide all premium contnent on medium",
+  "manifest_version": 2,
+  content_scripts": [
+    {
+      "matches": ["*://*.medium.com/"],
+      "js": ["main.js"]
+    }
+  ]
 }
