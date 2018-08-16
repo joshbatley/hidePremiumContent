@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Hide all premium contnent on medium",
   "manifest_version": 2,
-  content_scripts": [
+  "content_scripts": [
     {
       "matches": ["*://*.medium.com/"],
       "js": ["main.js"]
