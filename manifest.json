@@ -3,10 +3,16 @@
   "version": "1.0",
   "description": "Hide all premium contnent on medium",
   "manifest_version": 2,
-  "content_scripts": [
-    {
-      "matches": ["*://*.medium.com/"],
-      "js": ["main.js"]
-    }
-  ]
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon_grey_16.png"
+  },
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  }
 }
