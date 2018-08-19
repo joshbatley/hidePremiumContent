@@ -1,0 +1,25 @@
+{
+  "name": "hidepremiumcontent",
+  "version": "1.0.0",
+  "description": "Hide mediums premium content",
+  "main": "main.js",
+  "scripts": {
+    "build": "minify src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbatley/hidePremiumContent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbatley/hidePremiumContent/issues"
+  },
+  "homepage": "https://github.com/jbatley/hidePremiumContent#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-minify": "^0.4.3"
+  }
+}
