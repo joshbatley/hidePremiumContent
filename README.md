@@ -4,8 +4,6 @@ Hide all Medium premium content, from any main page on Medium.
 
 Only works on medium.com, no support for 3rd party blog
 
-Google Link:
-
 ## Installation
 - [Chrome](https://chrome.google.com/webstore/detail/free-medium/chnbggofbpmdlhmckdjebefnbbpiflcj)
 
