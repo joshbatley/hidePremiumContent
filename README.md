@@ -7,7 +7,7 @@ Only works on medium.com, no support for 3rd party blog
 Google Link:
 
 ## Installation
-Chrome:
+- [Chrome](https://chrome.google.com/webstore/detail/free-medium/chnbggofbpmdlhmckdjebefnbbpiflcj)
 
 ## Bugs
 
