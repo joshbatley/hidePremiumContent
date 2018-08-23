@@ -12,9 +12,9 @@ const message = chrome.tabs.sendMessage;
 function isTab() {
   if (tab && tab.url.includes('medium')) {
     isMedium = true;
-    if (isMedium) {
-      message(tab.id, { command: 'hide' });
-      chrome.browserAction.setIcon({path: './icons/icon_16.png'});
+      if (isMedium) {
+        message(tab.id, { command: 'hide' });
+        chrome.browserAction.setIcon({path: './icons/icon_16.png'});
     }
   } else {
     isMedium = false;
@@ -52,6 +52,13 @@ chrome.webRequest.onCompleted.addListener(function(e) {
 {
   urls: [ "*://*.medium.com/*" ]
 });
+
+chrome.tabs.onUpdated.addListener(function(e) {
+  chrome.tabs.query({ active: true }, (tabs) => {
+    tab = tabs[0];
+    isTab();
+  });
+})
 
 chrome.tabs.onActivated.addListener(function (e) {
   chrome.tabs.query({ active: true }, (tabs) => {
