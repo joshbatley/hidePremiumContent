@@ -1,6 +1,6 @@
 {
   "name": "Free Medium",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Hide all premium content on medium",
   "manifest_version": 2,
   "background": {
